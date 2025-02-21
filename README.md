@@ -18,3 +18,26 @@ After having the Lesion simulator and Lesion Remover processed patches ready,
 ```matlab
 /Test_on_Mammograms/LS_LR_assisted_training.m
 ```
+
+## Citation
+If you use this code for your research, please cite our papers.
+```
+@article{lee_automated_2018,
+	title = {Automated mammographic breast density estimation using a fully convolutional network},
+	volume = {45},
+	copyright = {© 2018 American Association of Physicists in Medicine},
+	issn = {2473-4209},
+	url = {https://aapm.onlinelibrary.wiley.com/doi/abs/10.1002/mp.12763},
+	doi = {10.1002/mp.12763},
+	language = {en},
+	number = {3},
+	urldate = {2018-10-18},
+	journal = {Medical Physics},
+	author = {Lee, Juhun and Nishikawa, Robert M},
+	month = mar,
+	year = {2018},
+	keywords = {segmentation, breast density, mammography, deep learning},
+	pages = {1178--1190},
+	file = {Full Text PDF:/Users/juhunlee/Zotero/storage/QIGXQFQM/Lee and Nishikawa - 2018 - Automated mammographic breast density estimation u.pdf:application/pdf;Snapshot:/Users/juhunlee/Zotero/storage/ZE8SANY8/mp.html:text/html},
+}
+```
