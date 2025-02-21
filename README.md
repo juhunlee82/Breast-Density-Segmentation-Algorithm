@@ -38,6 +38,5 @@ If you use this code for your research, please cite our papers.
 	year = {2018},
 	keywords = {segmentation, breast density, mammography, deep learning},
 	pages = {1178--1190},
-	file = {Full Text PDF:/Users/juhunlee/Zotero/storage/QIGXQFQM/Lee and Nishikawa - 2018 - Automated mammographic breast density estimation u.pdf:application/pdf;Snapshot:/Users/juhunlee/Zotero/storage/ZE8SANY8/mp.html:text/html},
 }
 ```
