@@ -13,9 +13,12 @@ Download our weights available at: [Mammo-Dense-SegNet Weights](https://drive.go
 Load the network weight:
 ```matlab
 load SegNet_227x227_CC_v2_e10.mat; % CC view model
-img = imread('.png');
-segimg = semanticseg(net,img);
-
+img = imread('mammogram_test_CC.jpg');
+segimg = semanticseg(img,net);
+% display the segmentation result
+figure(1);
+subplot(121); imshow(img);
+subplot(122); imshow(segimg);
 ```
 
 ## Citation
