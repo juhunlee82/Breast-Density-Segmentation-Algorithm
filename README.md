@@ -8,15 +8,14 @@ As anatomical structure of CC and MLO view are different, we developed two model
 The algorithm developed on MATLAB environment. We used SegNet architecture, trained on 1208 CC and 1208 MLO view of full-field digital screening mammograms of 604 women.
 
 ## How to use our algorithm
-Download our weights available at: [Mammo-Dense-SegNet Weights]()
+Download our weights available at: [Mammo-Dense-SegNet Weights](https://drive.google.com/file/d/1iEz8bJjITJo68QC6Pko2ivjQ7zXHSCuD/view?usp=drive_link)
 
 Load the network weight:
 ```matlab
-load 
-```
-After having the Lesion simulator and Lesion Remover processed patches ready, 
-```matlab
-/Test_on_Mammograms/LS_LR_assisted_training.m
+load SegNet_227x227_CC_v2_e10.mat; % CC view model
+img = imread('.png');
+segimg = semanticseg(net,img);
+
 ```
 
 ## Citation
