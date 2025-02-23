@@ -10,7 +10,7 @@ The algorithm developed on MATLAB environment. We used SegNet architecture, trai
 ## How to use our algorithm
 Download our weights available at: [Mammo-Dense-SegNet Weights](https://drive.google.com/file/d/1iEz8bJjITJo68QC6Pko2ivjQ7zXHSCuD/view?usp=drive_link)
 
-Load the network weight:
+Load the network weight, a target mammogram image, and then apply it using MATLAB function semnaticseg:
 ```matlab
 load SegNet_227x227_CC_v2_e10.mat; % CC view model
 img = imread('mammogram_test_CC.jpg');
