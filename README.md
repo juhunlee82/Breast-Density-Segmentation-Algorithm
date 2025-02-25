@@ -5,6 +5,21 @@ The algorithm takes the size of 227 x 227 pixels of mammogram images as input an
 The segmentation outcome consists of three channel, Red, Green, Blue indicate background, fatty, and dense tissue. 
 As anatomical structure of CC and MLO view are different, we developed two models, one for CC-view and another MLO-view. 
 
+For CC-view, it segments dense, fatty, and background. It removes any additional tissue (e.g., belly, axilar), if they are visible in the mammogramm.
+The below figure shows the input CC-view and its outcome from our segmentation algorithm.
+<p align="center">
+<img src="https://github.com/user-attachments/assets/b274cc94-382e-4155-9a5b-8e5a41883a59" width="80%" \>
+  <figcaption> Figure 1. Image input, CC-view (left) and its outcome (right) after applying our algorithm.</figcaption>
+</p>
+
+For MLO-view, it segments dense, fatty, and background. It removes pectoral muscle and any additional tissue not belong to breast.
+The below figure shows the input MLO-view and its outcome from our segmentation algorithm.
+<p align="center">
+<img src="https://github.com/user-attachments/assets/b274cc94-382e-4155-9a5b-8e5a41883a59" width="80%" \>![Uploading Picture1.png…]()
+
+  <figcaption> Figure 2. Image input, MLO-view (left) and its outcome (right) after applying our algorithm.</figcaption>
+</p>
+
 The algorithm developed on MATLAB environment. We used SegNet architecture, trained on 1208 CC and 1208 MLO view of full-field digital screening mammograms of 604 women.
 
 ## How to use our algorithm
