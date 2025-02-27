@@ -42,7 +42,7 @@ After that, load the network weight, a target mammogram image, and then apply it
 load SegNet_227x227_CC_v2_e10.mat; % CC view model
 img = imread('mammogram_test_CC.jpg');
 img = imresize(img,[227 227]);
-[~,~,segimg] = semanticseg(img,net);
+[~,~,segimg] = semanticseg(img,net); $
 % display the segmentation result
 figure(1);
 subplot(121); imshow(img);
@@ -57,6 +57,11 @@ figure(2);
 subplot(121); imshow(img);
 subplot(122); imshow(segimg);
 ```
+<p align="center">
+<img src="https://github.com/user-attachments/assets/d0ea4167-ea2b-43e9-9591-b8a00fe10710" width="100%" \>
+
+  <figcaption> Figure 3. Input and Output from the above example.</figcaption>
+</p>
 
 ## Citation
 If you use this code for your research, please cite our papers.
