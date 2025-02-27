@@ -22,16 +22,38 @@ The below figure shows the input MLO-view and its outcome from our segmentation 
 
 The algorithm developed on MATLAB environment. We used SegNet architecture, trained on 1208 CC and 1208 MLO view of full-field digital screening mammograms of 604 women.
 
+**Currently, the algorithm only works on "For presentation" view of Hologic screening digital mammograms.**
+
+We are continuously working on improving the algorithm. Improved algorithm with better architectures, making it work on synthetic mammograms and non-Hologic images will be available in this repository in the future.
 ## How to use our algorithm
 Download our weights available at: [Mammo-Dense-SegNet Weights](https://drive.google.com/file/d/1iEz8bJjITJo68QC6Pko2ivjQ7zXHSCuD/view?usp=drive_link)
 
-Load the network weight, a target mammogram image, and then apply it using MATLAB function semnaticseg:
+Extract mammogram images from DICOM. For matlab, use dicomread function.
 ```matlab
+dicomimg = dicomread([DICOM File]);
+```
+Convert dicomimg to 8 bit image using min-max normalization. For matlab, use mat2gray function.
+```matlab
+img = mat2gray(dicomimg);
+```
+After that, load the network weight, a target mammogram image, and then apply it using MATLAB function semnaticseg:
+```matlab
+%% CC view
 load SegNet_227x227_CC_v2_e10.mat; % CC view model
 img = imread('mammogram_test_CC.jpg');
-segimg = semanticseg(img,net);
+img = imresize(img,[227 227]);
+[~,~,segimg] = semanticseg(img,net);
 % display the segmentation result
 figure(1);
+subplot(121); imshow(img);
+subplot(122); imshow(segimg);
+%% MLO view
+load SegNet_227x227_MLO_v2_e10.mat; % MLO view model
+img = imread('mammogram_test_MLO.png');
+img = imresize(img,[227 227]);
+[~,~,segimg] = semanticseg(img,net);
+% display the segmentation result
+figure(2);
 subplot(121); imshow(img);
 subplot(122); imshow(segimg);
 ```
