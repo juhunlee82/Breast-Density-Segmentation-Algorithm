@@ -8,14 +8,14 @@ As anatomical structure of CC and MLO view are different, we developed two model
 For CC-view, it segments dense, fatty, and background. It removes any additional tissue (e.g., belly, axilar), if they are visible in the mammogramm.
 The below figure shows the input CC-view and its outcome from our segmentation algorithm.
 <p align="center">
-<img src="https://github.com/user-attachments/assets/b274cc94-382e-4155-9a5b-8e5a41883a59" width="80%" \>
+<img src="[https://github.com/user-attachments/assets/b274cc94-382e-4155-9a5b-8e5a41883a59](https://github.com/user-attachments/assets/68cbbb9f-5f64-4794-8e37-ee10a52e65f2)" width="80%" \>
   <figcaption> Figure 1. Image input, CC-view (left) and its outcome (right) after applying our algorithm.</figcaption>
 </p>
 
 For MLO-view, it segments dense, fatty, and background. It removes pectoral muscle and any additional tissue not belong to breast.
 The below figure shows the input MLO-view and its outcome from our segmentation algorithm.
 <p align="center">
-<img src="https://github.com/user-attachments/assets/b274cc94-382e-4155-9a5b-8e5a41883a59" width="80%" \>![Uploading Picture1.png…]()
+<img src="https://github.com/user-attachments/assets/b274cc94-382e-4155-9a5b-8e5a41883a59" width="80%" \>
 
   <figcaption> Figure 2. Image input, MLO-view (left) and its outcome (right) after applying our algorithm.</figcaption>
 </p>
