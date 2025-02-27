@@ -28,6 +28,7 @@ The algorithm developed on MATLAB environment. We used SegNet architecture, trai
 We are continuously working on improving the algorithm. Improved algorithm with better architectures, making it work on synthetic mammograms and non-Hologic images will be available in this repository in the future.
 ## How to use our algorithm
 **You will need Matlab version 2019b or higher to use this repository**
+
 Download our weights available at: [Mammo-Dense-SegNet Weights](https://drive.google.com/file/d/1iEz8bJjITJo68QC6Pko2ivjQ7zXHSCuD/view?usp=drive_link)
 
 Extract mammogram images from DICOM. For matlab, use dicomread function.
