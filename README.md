@@ -1,4 +1,6 @@
 ## What this repository offer
+You can access the techinical details of how we developed this algorithm at [Automated mammographic breast density estimation using a fully convolutional network](https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.12763)
+
 This repository is about breast density segmentation algorithms developed from my lab using deep convolutional networks on large mammogram dataset included full-field digital screening mammograms of 604 women, which included 1208 mediolateral oblique (MLO) and 1208 craniocaudal (CC) views from University of Pittsburgh Medical Center (UPMC).
 
 The algorithm takes the size of 227 x 227 pixels of mammogram images as input and it returns the segmentation outcome with the size of 227 x 227 pixels.
@@ -16,7 +18,6 @@ For MLO-view, it segments dense, fatty, and background. It removes pectoral musc
 The below figure shows the input MLO-view and its outcome from our segmentation algorithm.
 <p align="center">
 <img src="https://github.com/user-attachments/assets/d6ac5e82-7df0-48d1-bcb6-e8c5aaba9005" width="50%" \>
-
   <figcaption> Figure 2. Image input, MLO-view (left) and its outcome (right) after applying our algorithm.</figcaption>
 </p>
 
