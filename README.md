@@ -66,6 +66,15 @@ subplot(122); imshow(segimg);
   <figcaption> Figure 3. Input and Output from the above example.</figcaption>
 </p>
 
+If the segmentation outcome has a hole in the middle breast, especially for large and fatty breasts, the following trick may improve the results:
+
+```matlab
+img = imread('mammogram_test_MLO.png');
+img = imresize(img,[227 227]);
+img = histeq(img);
+[~,~,segimg] = semanticseg(img,net);
+```
+
 ## Citation
 If you use this code for your research, please cite our papers.
 ```
